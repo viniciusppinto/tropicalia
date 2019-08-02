@@ -1,0 +1,86 @@
+section#corpo p.result{
+	margin: 150px auto 50px;
+	text-align: center;
+	/* font-weight: bold; */
+	font-size: 35pt;
+}
+
+section#corpo p.error{
+	margin: 50px auto;
+	text-align: center;
+	font-size: 20pt;
+	background-color: #226644;
+	color: #FFD2C2;
+}
+
+section#corpo p.error b{
+	color: #F08976;
+}
+
+section#corpo button{
+	width: 30%;
+	margin: 30px 9% 30px 10%;
+	border: 4px solid #226644;
+	background: none;
+	padding: 2%;
+    box-sizing: border-box;
+	
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	font-size: 20pt;
+	color: #226644;
+	transition: all .2s cubic-bezier(1,1,1,1);
+}
+
+section#corpo button i{
+	font-size: 50pt;
+	color: #226644;
+}
+
+section#corpo table#user{
+	width: 70%;
+	margin: 100px auto;
+	padding: 0;
+    box-sizing: border-box;
+}
+
+section#corpo table#user tr{
+	padding: 0;
+    box-sizing: border-box;
+}
+
+table, th, td {
+	border: 4px solid #226644;
+    border-collapse: collapse;
+}
+
+section#corpo table#user tr td.user_data{
+	width: 35%;
+	padding: 2% 2% 1%;
+	margin: 0;
+    box-sizing: border-box;
+	text-align: center;
+}
+
+section#corpo table#user tr td.user_msg{
+	width: 65%;
+	padding: 5%;
+	margin: 0;
+    box-sizing: border-box;
+}
+
+section#corpo table#user tr td.user_msg p{
+	text-align: justify;
+}
+
+section#corpo table#user tr td.user_data img{
+	max-width: 150px;
+	height: 100px;
+	border-radius: 100%;
+}
+
+section#corpo table#user tr td.user_data p{
+	font-size: 10pt;
+	text-align: left;
+	line-height: 15pt;
+}

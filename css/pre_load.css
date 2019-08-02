@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css?family=Rammetto+One&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900');
+
+body{
+	background-color: #226644;
+	margin: 0;
+}
+
+header#cabecalho video#video{
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	z-index:-2;
+}
+
+header#cabecalho div#title{
+	color: #FFD2C2;
+	font-size: 120pt;
+	font-family: 'Rammetto One', cursive;
+	text-decoration: none;
+	text-align: center;
+	
+	margin: 15% auto 0%;
+	width: 100%;
+	cursor: default;
+}
+
+header#cabecalho button#enter{
+	
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20pt;
+	letter-spacing: 5pt;
+	
+	color: #FFD2C2;
+	text-decoration: none;
+	
+	border: 4px solid #FFD2C2;
+	background: none;
+	width: 17%;
+	padding: 10px 0px;
+	margin: 0% 0% 0% 42.2%;
+	transition: background-color 1s;	
+}
+
+header#cabecalho button#enter:hover{
+	background-color: rgba(0, 0, 0, 0.8);
+	cursor: pointer;
+}
+
+header#cabecalho div#saiba_mais{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15pt;
+	letter-spacing: 5pt;
+	text-align: center;
+	
+	color: #FFD2C2;
+	text-decoration: none;
+	
+	background: none;
+	width: 17%;
+	padding: 10px 0px;
+	margin: 6% 0% 3% 42.2%;
+	transition: all .2s cubic-bezier(1,1,1,1);	
+}
+
+header#cabecalho a.link{
+	text-decoration: none;
+	color: #FFD2C2;
+}
+
+header#cabecalho div#saiba_mais:hover{
+	color: #FFA499;
+	transform: scale(1.5);
+	z-index: 1;
+}
+
+#corpo{
+	left: 0;
+	background-color: #FFBBB2;
+	padding: 5% 20%;
+	font-family: 'Montserrat', sans-serif;
+	color: black;
+	text-align: center;
+}
+
+#corpo p{
+	font-size: 16pt;
+	letter-spacing: 2pt;
+	word-spacing: 5pt;
+	line-height: 20pt;
+	text-align: justify;
+	color: #226644;
+	margin-top: 6%;
+}
+
+#corpo h1{
+	font-size: 25pt;
+	text-align: center;
+	color: #226644;
+}
+
+#corpo p i{
+	background-color: #226644;
+	font-weight: bold;
+	color: #FFD2C2;
+}
+
+#corpo p a{
+	text-decoration: none;
+}
+
+#corpo img{
+	width: 60%;
+	margin: 4% auto 0%;
+}
+
+#corpo font{
+	font-size: 12pt;
+	font-style: italic;
+	color: #226644;
+}
+
+#corpo button{
+	
+	width: 30%;
+	border: 4px solid #226644;
+	background: none;
+	padding: 2%;
+	
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	font-size: 20pt;
+	color: #226644;
+	transition: all .2s cubic-bezier(1,1,1,1);
+}
+
+#corpo button:hover{
+	cursor: pointer;
+	transform: scale(1.2);
+	z-index: 1;
+}
+
+#rodape{
+	background-color: #226644;
+	padding: 2% 10%;
+	
+	border-top: 2px solid rgba(0, 0, 0, 0.3);
+	
+	background-image: url("../imagens/folha1.png");
+	background-size: auto 20%;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+
+#rodape p#frase{
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 35pt;
+	font-weight: bold;
+	letter-spacing: 4pt;
+	word-spacing: 7pt;
+	margin: 1% 0% 0%;
+	color: #FFBBB2;
+}
+
+#rodape p#copyright{
+	margin-top: 2%;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 10pt;
+	font-weight: 400;
+	letter-spacing: 1pt;
+	word-spacing: 1pt;
+	color: #FFBBB2;
+}

@@ -1,0 +1,113 @@
+body{
+	font-family: 'Montserrat', sans-serif;
+}
+
+header#cabecalho{
+	background-image: url("../imagens/background.jpg");
+}
+
+header#cabecalho nav#menu div.mensagem button{
+	border: none;
+	background: none;
+	color: #FFD2C2;
+	transition: color 0.2s;
+}
+
+header#cabecalho nav#menu div.mensagem button:hover{
+	color: #FFBBB2;
+	cursor: pointer;
+}
+
+header#cabecalho nav#menu div.mensagem {
+	position: relative;
+	display: block;
+	float: left;
+	color: #FFD2C2;
+}
+
+header#cabecalho nav#menu div.mensagem li#mensagem1:hover{
+	cursor: pointer;
+}
+
+.mensagem-content {
+    display: none;
+    position: absolute;
+	margin-top: 40px;
+    background: none;
+    z-index: 1;
+	color: #FFD2C2;
+	transition: color 0.2s;
+	text-align: center;
+}
+
+.mensagem-content a {
+	color: #FFD2C2;
+    padding: 12px 16px 0px;
+    text-decoration: none;
+    display: block;
+}
+
+.mensagem-content a:hover {
+    text-decoration: none;
+	color: #FFBBB2;
+}
+
+.mensagem:hover .mensagem-content {
+	color: #FFBBB2;
+    display: block;
+    text-decoration: none;
+}
+
+section#corpo form{
+	margin: 50px auto;
+}
+
+section#corpo form#form_contato fieldset, legend, label, input, textarea, select, datalist, option{
+	font-family: 'Montserrat', sans-serif;
+}
+
+section#corpo form#form_contato select outgroup{
+	color: gray;
+}
+
+section#corpo form#form_contato fieldset legend{
+	font-weight: bold;
+	font-size: 20pt;
+}
+section#corpo form#form_contato fieldset#sexo legend{
+	font-weight: normal;
+	font-size: 15pt;
+	letter-spacing: 2pt;
+}
+
+section#corpo form#form_contato fieldset{
+	margin: 30px 0px;
+}
+
+section#corpo form#form_contato fieldset p{
+	margin: 25px 0px;
+}
+
+section#corpo form#form_contato fieldset#mensagem textarea{
+	width: 90%;
+	height: 150px;
+	resize: vertical;
+}
+
+section#corpo form#form_contato{
+	width: 60%;
+}
+
+section#corpo form#form_contato fieldset#sexo{
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+section#corpo form#form_contato fieldset#sexo legend{
+	text-align: left;
+}
+
+input.endtxt{
+	transition: all .2s cubic-bezier(1,1,1,1);
+}
