@@ -1,0 +1,243 @@
+<!DOCTYPE HTML>
+
+<!-- AUTOR:	Vinícius Pereira Pinto -->
+
+<html>
+
+	<head>
+		
+		<title> CONTATO	</title>
+		
+		<meta charset="UTF-8">
+		<meta name="copyright" content="Vinil" />
+		
+		<!-- PARA INSERIR OS CÓDIGOS CSS -->
+		<link rel="stylesheet" type="text/css" href="../css/estilo_autores.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/contato.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/contato1.css"/>
+		<!-- PARA INSERIR O FAVICON -->
+		<link rel="shortcut icon" href="../imagens/favicon.ico" />
+		<!-- PARA INSERIR ICONES -->
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		
+	<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/C8C46178-A1B7-BC47-B81F-F60C89641D50/main.js" charset="UTF-8"></script></head>
+	
+	<body>
+		
+		<header id="cabecalho">
+			
+			<div id="logo">
+				&nbsp;&nbsp;T R O P I </br>
+				&nbsp;&nbsp;C Á L I A 
+			</div>
+			
+			<nav id="menu">
+				<h1> Menu Principal </h1>
+				<ol>
+					<a href="../index.html"> <li id="home"> <i class="material-icons">home</i> </li></a>
+					<div class="mensagem">
+						<li id="mensagem1"> <i class="material-icons">forum</i> </li>
+						<div class="mensagem-content">
+							<a href="#"><i class="material-icons">rate_review</i></a>
+							<a href="http://localhost/vinicius/paginas/php/mensagens.php"><i class="material-icons">clear_all</i></a>
+						</div>
+					</div>
+					
+					<div class="dropdown">
+						<li id="queque"> <i class="material-icons">queue_music</i> </li>
+						<div class="dropdown-content">
+							<a href="tropicalia.html">Tropicália</a>
+							<a href="construcao.html">Construção</a>
+							<a href="alegria_alegria.html">Alegria, Alegria</a>
+							<a href="panis_et_circenses.html">Panis et Circenses</a>
+							<a href="sangue_latino.html">Sangue Latino</a>
+							<a href="aguas_de_marco.html">Águas de Março</a>
+							<a href="caminhando_e_cantando.html">Caminhando e Cantando</a>
+							<a href="mas_que_nada.html">Mas, que nada!</a>
+							<a href="chega_de_saudade.html">Chega de Saudade</a>
+							<a href="rosa_de_hiroshima.html">Rosa de Hiroshima</a>
+							<a href="metamorfose_ambulante.html">Metamorfose Ambulante</a>
+							<a href="pais_tropical.html">País Tropical</a>
+							<a href="as_rosas_nao_falam.html">As Rosas Não Falam</a>
+							<a href="roda_viva.html">Roda-Viva</a>
+							<a href="domingo_no_parque.html">Domingo no Parque</a>
+							<a href="aquele_abraco.html">Aquele Abraço</a>
+							<a href="carta_ao_tom_74.html">Carta ao Tom 74</a>
+							<a href="garota_de_ipanema.html">Garota de Ipanema</a>
+						</div>
+					</div>
+					
+					<div class="autores">
+						<li id="listAutores"> <i class="material-icons">recent_actors</i> </li>
+						<div class="autores-content">
+							<a href="autores/caetano.html">Caetano Veloso</a>
+							<a href="autores/cartola.html">Cartola</a>
+							<a href="autores/chico.html">Chico Buarque</a>
+							<a href="autores/elis.html">Elis Regina</a>
+							<a href="autores/geraldo.html">Geraldo Vandré</a>
+							<a href="autores/gilberto.html">Gilberto Gil</a>
+							<a href="autores/joao.html">João Gilberto</a>
+							<a href="autores/jorge.html">Jorge Ben Jor</a>
+							<a href="autores/mutantes.html">Os Mutantes</a>
+							<a href="autores/raul.html">Raul Seixas</a>
+							<a href="autores/secosemolhados.html">Secos & Molhados</a>
+							<a href="autores/tom.html">Tom Jobim</a>
+							<a href="autores/vinicius.html">Vinícius de Morais</a>
+						</div>
+					</div>
+					
+				</ol>
+				
+			</nav>
+		
+			<br/><br/><br/><br/><br/><br/>
+			<div id="titulo">
+				<h1> CONTATO </h1>
+				<p>____________________________________________________________<p>
+			</div>
+			
+		</header>
+		
+		<section id="corpo">
+			
+			<form id="form_contato" method="post" name="form_contato"
+				  action=http://localhost/vinicius/paginas/php/resultado.php
+				  enctype="multipart/form-data">
+				
+				<fieldset id="usuario" style="border: 4px solid #226644;">
+					<legend> Identificação do Usuário </legend>
+					<p>
+						<label for="cNome">Nome:</label>
+						<input type="text" name="txtNome" id="cNome" size="50" 
+						maxlength="45" placeholder="Digite seu nome completo"/>
+					</p> 
+					<p>
+						<label for="txtFoto">Foto (máximo 3MB):</label> &nbsp;&nbsp;&nbsp;
+						<input type="file" name="txtFoto">				
+					</p>
+					<p>
+						<label for="cSenha">Senha:</label>
+						<input type="password" name="txtSenha" id="cSenha" size="12"
+						maxlength="12" placeholder="Senha"/>						
+					</p>
+					<p>
+						<label for="cEmail">E-mail:</label>
+						<input type="email" name="txtEmail" id="cEmail" size="35"
+						maxlength="30" placeholder="Digite seu email"/>	</p>
+					<fieldset id="sexo">
+						<legend>Sexo:</legend>
+							<input type="radio" value="M" name="txtSexo" id="cMasc" /> 
+							<label for="cMasc">Masculino</label>
+							<input type="radio" value="F" name="txtSexo" id="cFem" />
+							<label for="cFem">Feminino</label>
+							<input type="radio" value="-" name="txtSexo" id="cNone" checked />
+							<label for="cNone">Prefiro não me identificar</label>
+					</fieldset>
+					<p>
+						<label for="cNasc">Data de Nascimento: </label>
+						<input type="date" name="txtNasc" id="cNasc" /></p>
+				
+				</fieldset>
+				<fieldset id="endereco" style="border: 4px solid #226644;">
+					<legend> Endereço do Usuário </legend>
+					<p>
+						<label for="cEnd">Endereço:</label>
+						<input type="text" name="txtEnd" id="cEnd" size="50" maxlength="45"
+						placeholder="Av, Rua, Travessa..." />
+					</p>
+					<p>
+						<label for="cNum">Número:</label>
+						<input type="number" name="txtNum" 
+						id="cNum" min="0" max="99999"  placeholder="Número"/>						
+					</p>
+					<p>
+						<label for="cEst">Estado:</label>
+						<select name="txtEst" id="cEst">
+							<optgroup label="Região Sudeste">
+								<option value="ES">Espírito Santo</option>
+								<option value="MG" selected>Minas Gerais</option>
+								<option value="RJ">Rio de Janeiro</option>
+								<option value="SP">São Paulo</option>
+							</optgroup>							
+						</select>					
+					</p>
+					<p>
+						<label for="cCid">Cidade:</label>
+						<select name="txtCid" id="cCid">
+							<option value="Alpinópolis">Alpinópolis</option>
+							<option value="Furnas">Furnas</option>
+							<option value="Glória">Glória</option>
+							<option value="Itaú de Minas">Itaú de Minas</option>
+							<option value="Passos" selected>Passos</option>
+							<option value="Pratápolis">Pratápolis</option>			
+						</select>
+				</fieldset>
+				
+				<fieldset id="mensagem" style="border: 4px solid #226644;">
+					<legend>Mensagem do Usuário</legend>
+						<p> Grau de urgência: 
+						Min<input type="range" name="txtUrg" id="cUrg" 
+							min="0" max="10" step="2"> Max
+						</p>
+						<p>Mensagem: <i style="font-size:10pt;"> (Não utilize aspas na mensagem) </i><br/><br/>
+						<textarea name="txtMensagem" cols="45" rows="5"
+						placeholder="Digite aqui sua mensagem e clique em 'Enviar'; 
+Não utilize aspas na mensagem!"></textarea>
+						</p>
+						<p>
+							<input type="checkbox" value="1" name="txtRecEmail" id="cRecEmail" checked />
+							Gostaria de receber email sobre as notícias
+						</p>		
+				</fieldset>
+				<input style="
+					width: 60%;
+					border: 3px solid #226644;
+					background: none;
+					padding: 2% 10%;
+					font-weight: bold;
+					box-sizing: border-box;
+					font-size: 15pt;
+					color: #226644;
+					text-align: center;
+				" type="submit" value="Enviar" />
+				<input style="
+					width: 39%;
+					border: 3px solid #226644;
+					background: none;
+					padding: 2% 10%;
+					font-weight: bold;
+					box-sizing: border-box;
+					font-size: 15pt;
+					color: #226644;
+					text-align: center;
+				" type="reset" value="Limpar" />
+				
+			</form>
+				
+				<!-- DEAR JANAÍNA, 
+				PRECISEI UTILIZAR O CSS INLINE PORQUE O SERVIDOR
+				WAMP NÃO QUER ACEITAR O CSS EXTERNO. O contato1.css
+				FOI CRIADO ESPECIALMENTE POR ISSO, MAS NESTE CASO
+				NÃO AJUDOU. ESPERO QUE ENTENDA.
+				
+				ABRAÇOS,
+				SEU ALUNO MAIS LEGAL. -->
+				
+			<a href="http://localhost/vinicius/paginas/php/mensagens.php">
+				<button style="width: 50%; margin: 30px 25%;"> <i class="material-icons">clear_all</i></br> VER TODAS AS MENSAGENS </button></a>
+		</section>
+		
+		<footer id="rodape">
+			
+			<p id="frase">
+				"Palavras pequenas, palavras apenas, palaaaaavras!"
+			</p>
+			<p id="copyright">
+				&copy; Todos os Direitos Reservados - Vinícius Pereira Pinto - 2018
+			</p>
+			
+		</footer>
+		
+	</body>
+	
+</html>

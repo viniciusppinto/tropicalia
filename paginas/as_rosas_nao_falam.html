@@ -1,0 +1,223 @@
+<!DOCTYPE HTML>
+
+<!-- AUTOR:	Vinícius Pereira Pinto -->
+
+<html>
+
+	<head>
+		
+		<title> As Rosas não Falam </title>
+		
+		<meta charset="UTF-8">
+		<meta name="copyright" content="Vinil" />
+		
+		<!-- PARA INSERIR OS CÓDIGOS CSS -->
+		<link rel="stylesheet" type="text/css" href="../css/estilo.css"/>
+		<!-- PARA INSERIR O FAVICON -->
+		<link rel="shortcut icon" href="../imagens/favicon.ico" />
+		<!-- PARA INSERIR ICONES -->
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		
+	</head>
+	
+	<body>
+		
+		<header id="cabecalho" style="background-image: url('../imagens/cartola.jpg');">
+			
+			<div id="logo">
+				&nbsp;&nbsp;T R O P I </br>
+				&nbsp;&nbsp;C Á L I A 
+			</div>
+			
+			<audio id="song">
+			  <source src="../musicas/as_rosas_nao_falam.mp3" type="audio/mp3" />
+			  Your browser does not support the audio element.
+			</audio>
+			
+			<nav id="menu">
+				<h1> Menu Principal </h1>
+				<ol>
+					<a href="../index.html"> <li id="home"> <i class="material-icons">home</i> </li></a>
+					
+					<a href="pais_tropical.html"> <li> <i class="material-icons">skip_previous</i> </li> </a>
+					<li> <button onclick="playAudio()"> <i class="material-icons">play_arrow</i> </button></li>
+					<li> <button onclick="pauseAudio()"> <i class="material-icons">pause</i> </button></li>
+					<a href="roda_viva.html"> <li> <i class="material-icons">skip_next</i> </li> </a>
+					
+					<div class="volume">
+						<li id="volume1"> <i class="material-icons">volume_up</i> </li>
+						<div class="volume-content">
+							<button id="mais_ou_menos" onclick="setAddVolume()"><i class="material-icons">add_circle_outline</i></button>
+							<button id="mais_ou_menos" onclick="setRemoveVolume()"><i class="material-icons">remove_circle_outline</i></button>
+						</div>
+					</div>
+					
+					<div class="dropdown">
+						<li id="queque"> <i class="material-icons">queue_music</i> </li>
+						<div class="dropdown-content">
+							<a href="tropicalia.html">Tropicália</a>
+							<a href="construcao.html">Construção</a>
+							<a href="alegria_alegria.html">Alegria, Alegria</a>
+							<a href="panis_et_circenses.html">Panis et Circenses</a>
+							<a href="sangue_latino.html">Sangue Latino</a>
+							<a href="aguas_de_marco.html">Águas de Março</a>
+							<a href="caminhando_e_cantando.html">Caminhando e Cantando</a>
+							<a href="mas_que_nada.html">Mas, que nada!</a>
+							<a href="chega_de_saudade.html">Chega de Saudade</a>
+							<a href="rosa_de_hiroshima.html">Rosa de Hiroshima</a>
+							<a href="metamorfose_ambulante.html">Metamorfose Ambulante</a>
+							<a href="pais_tropical.html">País Tropical</a>
+							<a href="as_rosas_nao_falam.html">As Rosas Não Falam</a>
+							<a href="roda_viva.html">Roda-Viva</a>
+							<a href="domingo_no_parque.html">Domingo no Parque</a>
+							<a href="aquele_abraco.html">Aquele Abraço</a>
+							<a href="carta_ao_tom_74.html">Carta ao Tom 74</a>
+							<a href="garota_de_ipanema.html">Garota de Ipanema</a>
+						</div>
+					</div>
+					
+					<div class="autores">
+						<li id="listAutores"> <i class="material-icons">recent_actors</i> </li>
+						<div class="autores-content">
+							<a href="autores/caetano.html">Caetano Veloso</a>
+							<a href="autores/cartola.html">Cartola</a>
+							<a href="autores/chico.html">Chico Buarque</a>
+							<a href="autores/elis.html">Elis Regina</a>
+							<a href="autores/geraldo.html">Geraldo Vandré</a>
+							<a href="autores/gilberto.html">Gilberto Gil</a>
+							<a href="autores/joao.html">João Gilberto</a>
+							<a href="autores/jorge.html">Jorge Ben Jor</a>
+							<a href="autores/mutantes.html">Os Mutantes</a>
+							<a href="autores/raul.html">Raul Seixas</a>
+							<a href="autores/secosemolhados.html">Secos & Molhados</a>
+							<a href="autores/tom.html">Tom Jobim</a>
+							<a href="autores/vinicius.html">Vinícius de Morais</a>
+						</div>
+					</div>
+					
+				</ol>
+				
+			</nav>
+			
+			<script>
+				var x = document.getElementById("song"); 
+				
+				x.volume = 0.8;
+				
+				function playAudio() { 
+					x.play(); 
+				} 
+
+				function pauseAudio() { 
+					x.pause(); 
+				} 
+				
+				function getVolume() { 
+					alert(x.volume);
+				} 
+
+				function setAddVolume() { 
+					x.volume += 0.1;
+				}
+
+				function setRemoveVolume() { 
+					x.volume -= 0.1;
+				}
+				
+			</script>
+		
+			<br/><br/><br/><br/><br/><br/>
+			<div id="titulo">
+				<h1> As Rosas não Falam </h1>
+				<p>____________________________________________________________<p>
+				<h2> Cartola </h2>
+			</div>
+			
+		</header>
+		
+		<section id="corpo">
+			
+			<article class="musica">
+				<h2> Letra: </h2>
+				<p class="letra">
+					
+					Bate outra vez<br/>
+					Com esperanças o meu coração<br/>
+					Pois já vai terminando o verão enfim<br/><br/>
+
+					Volto ao jardim<br/>
+					Com a certeza que devo chorar<br/>
+					Pois bem sei que não queres voltar para mim<br/><br/>
+
+					Queixo-me às rosas, mas que bobagem<br/>
+					As rosas não falam<br/>
+					Simplesmente as rosas exalam<br/>
+					O perfume que roubam de ti, ai...<br/><br/>
+
+					Devias vir<br/>
+					Para ver os meus olhos tristonhos<br/>
+					E, quem sabe, sonhar os meus sonhos<br/>
+					por fim.
+
+				</p>
+			</article>
+			
+			<article class="direita">
+				
+				<h2> Vídeo <i class="material-icons">video_library</i> </h2>
+				
+				<iframe id="video" src="https://www.youtube.com/embed/VofYXCJyeTY" 
+				frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+				
+				<p class="desc"> 
+					
+					<font>As Rosas Não Falam</font> é uma canção do compositor <font>Cartola</font>. A cantora Beth Carvalho incluiu esta composição no álbum Mundo Melhor (1976), sendo esta a primeira gravação de "As Rosas Não Falam" lançada comercialmente.
+				
+				</p><p class="desc"> 
+					
+					Essa música tem uma história bonita de inspiração. Um dia Cartola levou à Dona Zica, sua esposa, umas mudas de rosas que plantou no jardim. Dias depois, ao abrir a porta pela manhã, percebeu que muitos botões haviam desabrochados e ficou deslumbrada com a beleza e quantidade. Chamou seu poeta amado e perguntou:<br/><br/>
+
+					<i>– Cartola, venha aqui! Venha ver o jardim! Por que é que nasceu tanta rosa ?</i><br/><br/>
+
+					E o sábio respondeu:<br/><br/>
+
+					<i>– Não sei, Zica. As rosas não falam!</i><br/><br/>
+
+					Isso o inspirou e a inspiração foi tanta que compôs quase que imediatamente. Estando nas vésperas de seu aniversário de 65 anos se deu de presente essa linda canção que encanta os amantes do samba até os dias atuais.<br/>
+				
+				</p>
+				
+				<br/><br/><br/>
+				<h2> Escute no Spotify <i class="material-icons">library_music</i> </h2>
+				<iframe src="https://open.spotify.com/embed/track/0MMe6HyOCDo6GYBZZCwkyt" 
+				id="spotify" frameborder="0" allowtransparency="true"
+				allow="encrypted-media"></iframe>
+				
+				<hr color="#226644">
+				<h2> Referências Externas <i class="material-icons">queue_play_next</i> </h2>
+				
+				<p class="ref">
+					<i class="material-icons">forward</i>
+					<a target="blank" href="https://oglobo.globo.com/cultura/para-leitores-as-rosas-nao-falam-a-melhor-de-cartola-3605940">
+					«Para leitores, 'As rosas não falam' é a melhor de Cartola»</a>
+					- O Globo <br/><br/>
+				</p>
+				
+			</article>
+			
+		</section>
+		
+		<footer id="rodape">
+			
+			<p id="frase">
+				"Simplesmente as rosas exalam o perfume que roubam de ti!"
+			</p>
+			<p id="copyright">
+				&copy; Todos os Direitos Reservados - Vinícius Pereira Pinto - 2018
+			</p>
+			
+		</footer>
+		
+	</body>
+	
+</html>

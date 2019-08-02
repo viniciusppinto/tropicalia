@@ -1,0 +1,294 @@
+<!DOCTYPE HTML>
+
+<!-- AUTOR:	Vinícius Pereira Pinto -->
+
+<html>
+
+	<head>
+		
+		<title> Construção </title>
+		
+		<meta charset="UTF-8">
+		<meta name="copyright" content="Vinil" />
+		
+		<!-- PARA INSERIR OS CÓDIGOS CSS -->
+		<link rel="stylesheet" type="text/css" href="../css/estilo.css"/>
+		<!-- PARA INSERIR O FAVICON -->
+		<link rel="shortcut icon" href="../imagens/favicon.ico" />
+		<!-- PARA INSERIR ICONES -->
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		
+	</head>
+	
+	<body>
+		
+		<header id="cabecalho" style="background-image: url('../imagens/chico.jpg');">
+			
+			<div id="logo">
+				&nbsp;&nbsp;T R O P I </br>
+				&nbsp;&nbsp;C Á L I A 
+			</div>
+			
+			<audio id="song">
+			  <source src="../musicas/construcao.mp3" type="audio/mp3" />
+			  Your browser does not support the audio element.
+			</audio>
+			
+			<nav id="menu">
+				<h1> Menu Principal </h1>
+				<ol>
+					<a href="../index.html"> <li id="home"> <i class="material-icons">home</i> </li></a>
+					
+					<a href="tropicalia.html"> <li> <i class="material-icons">skip_previous</i> </li> </a>
+					<li> <button onclick="playAudio()"> <i class="material-icons">play_arrow</i> </button></li>
+					<li> <button onclick="pauseAudio()"> <i class="material-icons">pause</i> </button></li>
+					<a href="alegria_alegria.html"> <li> <i class="material-icons">skip_next</i> </li> </a>
+					
+					<div class="volume">
+						<li id="volume1"> <i class="material-icons">volume_up</i> </li>
+						<div class="volume-content">
+							<button id="mais_ou_menos" onclick="setAddVolume()"><i class="material-icons">add_circle_outline</i></button>
+							<button id="mais_ou_menos" onclick="setRemoveVolume()"><i class="material-icons">remove_circle_outline</i></button>
+						</div>
+					</div>
+					
+					<div class="dropdown">
+						<li id="queque"> <i class="material-icons">queue_music</i> </li>
+						<div class="dropdown-content">
+							<a href="tropicalia.html">Tropicália</a>
+							<a href="construcao.html">Construção</a>
+							<a href="alegria_alegria.html">Alegria, Alegria</a>
+							<a href="panis_et_circenses.html">Panis et Circenses</a>
+							<a href="sangue_latino.html">Sangue Latino</a>
+							<a href="aguas_de_marco.html">Águas de Março</a>
+							<a href="caminhando_e_cantando.html">Caminhando e Cantando</a>
+							<a href="mas_que_nada.html">Mas, que nada!</a>
+							<a href="chega_de_saudade.html">Chega de Saudade</a>
+							<a href="rosa_de_hiroshima.html">Rosa de Hiroshima</a>
+							<a href="metamorfose_ambulante.html">Metamorfose Ambulante</a>
+							<a href="pais_tropical.html">País Tropical</a>
+							<a href="as_rosas_nao_falam.html">As Rosas Não Falam</a>
+							<a href="roda_viva.html">Roda-Viva</a>
+							<a href="domingo_no_parque.html">Domingo no Parque</a>
+							<a href="aquele_abraco.html">Aquele Abraço</a>
+							<a href="carta_ao_tom_74.html">Carta ao Tom 74</a>
+							<a href="garota_de_ipanema.html">Garota de Ipanema</a>
+						</div>
+					</div>
+					
+					<div class="autores">
+						<li id="listAutores"> <i class="material-icons">recent_actors</i> </li>
+						<div class="autores-content">
+							<a href="autores/caetano.html">Caetano Veloso</a>
+							<a href="autores/cartola.html">Cartola</a>
+							<a href="autores/chico.html">Chico Buarque</a>
+							<a href="autores/elis.html">Elis Regina</a>
+							<a href="autores/geraldo.html">Geraldo Vandré</a>
+							<a href="autores/gilberto.html">Gilberto Gil</a>
+							<a href="autores/joao.html">João Gilberto</a>
+							<a href="autores/jorge.html">Jorge Ben Jor</a>
+							<a href="autores/mutantes.html">Os Mutantes</a>
+							<a href="autores/raul.html">Raul Seixas</a>
+							<a href="autores/secosemolhados.html">Secos & Molhados</a>
+							<a href="autores/tom.html">Tom Jobim</a>
+							<a href="autores/vinicius.html">Vinícius de Morais</a>
+						</div>
+					</div>
+					
+				</ol>
+				
+			</nav>
+			
+			<script>
+				var x = document.getElementById("song"); 
+				
+				x.volume = 0.8;
+				
+				function playAudio() { 
+					x.play(); 
+				} 
+
+				function pauseAudio() { 
+					x.pause(); 
+				} 
+				
+				function getVolume() { 
+					alert(x.volume);
+				} 
+
+				function setAddVolume() { 
+					x.volume += 0.1;
+				}
+
+				function setRemoveVolume() { 
+					x.volume -= 0.1;
+				}
+				
+			</script>
+		
+			<br/><br/><br/><br/><br/><br/>
+			<div id="titulo">
+				<h1> Construção </h1>
+				<p>____________________________________________________________<p>
+				<h2> Chico Buarque </h2>
+			</div>
+			
+		</header>
+		
+		<section id="corpo">
+			
+			<article class="musica">
+				<h2> Letra: </h2>
+				<p class="letra">
+					Amou daquela vez como se fosse a última<br/>
+					Beijou sua mulher como se fosse a última<br/>
+					E cada filho seu como se fosse o único<br/>
+					E atravessou a rua com seu passo tímido<br/><br/>
+					
+					Subiu a construção como se fosse máquina<br/>
+					Ergueu no patamar quatro paredes sólidas<br/>
+					Tijolo com tijolo num desenho mágico<br/>
+					Seus olhos embotados de cimento e lágrima<br/><br/>
+					
+					Sentou pra descansar como se fosse sábado<br/>
+					Comeu feijão com arroz como se fosse um príncipe<br/>
+					Bebeu e soluçou como se fosse um náufrago<br/>
+					Dançou e gargalhou como se ouvisse música<br/><br/>
+					
+					E tropeçou no céu como se fosse um bêbado<br/>
+					E flutuou no ar como se fosse um pássaro<br/>
+					E se acabou no chão feito um pacote flácido<br/>
+					Agonizou no meio do passeio público<br/>
+					Morreu na contramão, atrapalhando o tráfego<br/><br/>
+					
+					Amou daquela vez como se fosse o último<br/>
+					Beijou sua mulher como se fosse a única<br/>
+					E cada filho seu como se fosse o pródigo<br/>
+					E atravessou a rua com seu passo bêbado<br/><br/>
+					
+					Subiu a construção como se fosse sólido<br/>
+					Ergueu no patamar quatro paredes mágicas<br/>
+					Tijolo com tijolo num desenho lógico<br/>
+					Seus olhos embotados de cimento e tráfego<br/><br/>
+					
+					Sentou pra descansar como se fosse um príncipe<br/>
+					Comeu feijão com arroz como se fosse o máximo<br/>
+					Bebeu e soluçou como se fosse máquina<br/>
+					Dançou e gargalhou como se fosse o próximo<br/><br/>
+					
+					E tropeçou no céu como se ouvisse música<br/>
+					E flutuou no ar como se fosse sábado<br/>
+					E se acabou no chão feito um pacote tímido<br/>
+					Agonizou no meio do passeio náufrago<br/>
+					Morreu na contramão atrapalhando o público<br/><br/>
+					
+					Amou daquela vez como se fosse máquina<br/>
+					Beijou sua mulher como se fosse lógico<br/>
+					Ergueu no patamar quatro paredes flácidas<br/>
+					Sentou pra descansar como se fosse um pássaro<br/>
+					E flutuou no ar como se fosse um príncipe<br/>
+					E se acabou no chão feito um pacote bêbado<br/>
+					Morreu na contramão atrapalhando o sábado<br/><br/>
+					
+					Por esse pão pra comer, por esse chão pra dormir<br/>
+					A certidão pra nascer e a concessão pra sorrir<br/>
+					Por me deixar respirar, por me deixar existir<br/>
+					Deus lhe pague<br/><br/>
+					
+					Pela cachaça de graça que a gente tem que engolir<br/>
+					Pela fumaça e a desgraça que a gente tem que tossir<br/>
+					Pelos andaimes pingentes que a gente tem que cair<br/>
+					Deus lhe pague<br/><br/>
+					
+					Pela mulher carpideira pra nos louvar e cuspir<br/>
+					E pelas moscas bicheiras a nos beijar e cobrir<br/>
+					E pela paz derradeira que enfim vai nos redimir<br/>
+					Deus lhe pague
+				</p>
+			</article>
+			
+			<article class="direita">
+				
+				<h2> Vídeo <i class="material-icons">video_library</i> </h2>
+				
+				<iframe id="video" src="https://www.youtube.com/embed/P7mHf-UCZp0" 
+				frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+				
+				<p class="desc"> 
+					
+					<font>Construção</font> é uma canção do cantor e compositor 
+					brasileiro <font>Chico Buarque</font>, lançada em 1971 para 
+					seu álbum homônimo. Junto com "Pedro Pedreiro", 
+					é considerada <font>uma das canções mais emblemáticas 
+					da vertente crítica do compositor</font>, "podendo-se 
+					enquadrar como um testemunho doloroso das relações 
+					aviltantes entre o capital e o trabalho".
+				</p><p class="desc"> 
+					A letra foi composta em versos dodecassílabos, que 
+					sempre terminam numa palavra proparoxítona. Os 17 
+					versos da primeira parte (quatro quartetos, 
+					acrescidos de um verso-desfecho) são praticamente 
+					os mesmos dezessete que compõem a segunda parte, 
+					mudando apenas a última palavra. Os arranjos são 
+					do maestro Rogério Duprat, em uma melodia repetitiva, 
+					desenvolvida inicialmente sobre dois acordes. 
+					A música, entretanto, tem harmonia bem mais complexa.
+				</p><p class="desc"> 
+					A canção foi feita em um dos períodos mais severos 
+					da ditadura militar no Brasil, em meio à censura e 
+					à perseguições políticas. Chico Buarque havia 
+					retornado da Itália em março de 1970, país onde 
+					vivia desde o início de 1969, ao tomar distância 
+					voluntária da repressão política brasileira. A 
+					canção já foi eleita em enquete da Folha de S.Paulo 
+					como a <font>segunda melhor canção brasileira de todos os 
+					tempos</font> e, por eleição na revista Rolling Stone, a 
+					<font>"maior canção brasileira de todos os tempos"</font>. 
+					Recebeu também grande destaque durante a Cerimônia 
+					de Abertura dos Jogos Olímpicos Rio 2016, 
+					tocada ao fundo de um dos segmentos artísticos.
+				
+				</p>
+				
+				<br/><br/><br/>
+				<h2> Escute no Spotify <i class="material-icons">library_music</i> </h2>
+				<iframe src="https://open.spotify.com/embed/track/1ECean5dVz7mYQ07mdVGKT" 
+				id="spotify" frameborder="0" allowtransparency="true"
+				allow="encrypted-media"></iframe>
+				
+				<hr color="#226644">
+				<h2> Referências Externas <i class="material-icons">queue_play_next</i> </h2>
+				
+				<p class="ref">
+					<i class="material-icons">forward</i>
+					<a target="blank" href="https://www.culturagenial.com/musica-construcao-de-chico-buarque/">
+					«Música Construção de Chico Buarque»</a>
+					- Cultura Genial <br/><br/>
+					<i class="material-icons">forward</i>
+					<a target="blank" href="http://www.luizamerico.com.br/fundamentais-chico-buarque.php">
+					«Chico Buarque de Holanda - Construção - 1971»</a>
+					- Luiz Americo: A História da MPB <br/><br/>
+					<i class="material-icons">forward</i>
+					<a target="blank" href="https://www1.folha.uol.com.br/colunas/monicabergamo/2018/04/disco-construcao-de-chico-buarque-sera-relancado-em-vinil.shtml">
+					«Disco 'Construção', de Chico Buarque, será relançado em vinil»</a>
+					- Folha de S. Paulo <br/><br/>
+				</p>
+				
+			</article>
+			
+		</section>
+		
+		<footer id="rodape">
+			
+			<p id="frase">
+				"Deus lhe pague!"
+			</p>
+			<p id="copyright">
+				&copy; Todos os Direitos Reservados - Vinícius Pereira Pinto - 2018
+			</p>
+			
+		</footer>
+		
+	</body>
+	
+</html>

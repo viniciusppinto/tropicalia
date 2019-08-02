@@ -1,0 +1,276 @@
+<!DOCTYPE HTML>
+
+<!-- AUTOR:	Vinícius Pereira Pinto -->
+
+<html>
+
+	<head>
+		
+		<title> Roda-Viva </title>
+		
+		<meta charset="UTF-8">
+		<meta name="copyright" content="Vinil" />
+		
+		<!-- PARA INSERIR OS CÓDIGOS CSS -->
+		<link rel="stylesheet" type="text/css" href="../css/estilo.css"/>
+		<!-- PARA INSERIR O FAVICON -->
+		<link rel="shortcut icon" href="../imagens/favicon.ico" />
+		<!-- PARA INSERIR ICONES -->
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		
+	</head>
+	
+	<body>
+		
+		<header id="cabecalho" style="background-image: url('../imagens/chico.jpg');">
+			
+			<div id="logo">
+				&nbsp;&nbsp;T R O P I </br>
+				&nbsp;&nbsp;C Á L I A 
+			</div>
+			
+			<audio id="song">
+			  <source src="../musicas/roda_viva.mp3" type="audio/mp3" />
+			  Your browser does not support the audio element.
+			</audio>
+			
+			<nav id="menu">
+				<h1> Menu Principal </h1>
+				<ol>
+					<a href="../index.html"> <li id="home"> <i class="material-icons">home</i> </li></a>
+					
+					<a href="as_rosas_nao_falam.html"> <li> <i class="material-icons">skip_previous</i> </li> </a>
+					<li> <button onclick="playAudio()"> <i class="material-icons">play_arrow</i> </button></li>
+					<li> <button onclick="pauseAudio()"> <i class="material-icons">pause</i> </button></li>
+					<a href="domingo_no_parque.html"> <li> <i class="material-icons">skip_next</i> </li> </a>
+					
+					<div class="volume">
+						<li id="volume1"> <i class="material-icons">volume_up</i> </li>
+						<div class="volume-content">
+							<button id="mais_ou_menos" onclick="setAddVolume()"><i class="material-icons">add_circle_outline</i></button>
+							<button id="mais_ou_menos" onclick="setRemoveVolume()"><i class="material-icons">remove_circle_outline</i></button>
+						</div>
+					</div>
+					
+					<div class="dropdown">
+						<li id="queque"> <i class="material-icons">queue_music</i> </li>
+						<div class="dropdown-content">
+							<a href="tropicalia.html">Tropicália</a>
+							<a href="construcao.html">Construção</a>
+							<a href="alegria_alegria.html">Alegria, Alegria</a>
+							<a href="panis_et_circenses.html">Panis et Circenses</a>
+							<a href="sangue_latino.html">Sangue Latino</a>
+							<a href="aguas_de_marco.html">Águas de Março</a>
+							<a href="caminhando_e_cantando.html">Caminhando e Cantando</a>
+							<a href="mas_que_nada.html">Mas, que nada!</a>
+							<a href="chega_de_saudade.html">Chega de Saudade</a>
+							<a href="rosa_de_hiroshima.html">Rosa de Hiroshima</a>
+							<a href="metamorfose_ambulante.html">Metamorfose Ambulante</a>
+							<a href="pais_tropical.html">País Tropical</a>
+							<a href="as_rosas_nao_falam.html">As Rosas Não Falam</a>
+							<a href="roda_viva.html">Roda-Viva</a>
+							<a href="domingo_no_parque.html">Domingo no Parque</a>
+							<a href="aquele_abraco.html">Aquele Abraço</a>
+							<a href="carta_ao_tom_74.html">Carta ao Tom 74</a>
+							<a href="garota_de_ipanema.html">Garota de Ipanema</a>
+						</div>
+					</div>
+					
+					<div class="autores">
+						<li id="listAutores"> <i class="material-icons">recent_actors</i> </li>
+						<div class="autores-content">
+							<a href="autores/caetano.html">Caetano Veloso</a>
+							<a href="autores/cartola.html">Cartola</a>
+							<a href="autores/chico.html">Chico Buarque</a>
+							<a href="autores/elis.html">Elis Regina</a>
+							<a href="autores/geraldo.html">Geraldo Vandré</a>
+							<a href="autores/gilberto.html">Gilberto Gil</a>
+							<a href="autores/joao.html">João Gilberto</a>
+							<a href="autores/jorge.html">Jorge Ben Jor</a>
+							<a href="autores/mutantes.html">Os Mutantes</a>
+							<a href="autores/raul.html">Raul Seixas</a>
+							<a href="autores/secosemolhados.html">Secos & Molhados</a>
+							<a href="autores/tom.html">Tom Jobim</a>
+							<a href="autores/vinicius.html">Vinícius de Morais</a>
+						</div>
+					</div>
+					
+				</ol>
+				
+			</nav>
+			
+			<script>
+				var x = document.getElementById("song"); 
+				
+				x.volume = 0.8;
+				
+				function playAudio() { 
+					x.play(); 
+				} 
+
+				function pauseAudio() { 
+					x.pause(); 
+				} 
+				
+				function getVolume() { 
+					alert(x.volume);
+				} 
+
+				function setAddVolume() { 
+					x.volume += 0.1;
+				}
+
+				function setRemoveVolume() { 
+					x.volume -= 0.1;
+				}
+				
+			</script>
+		
+			<br/><br/><br/><br/><br/><br/>
+			<div id="titulo">
+				<h1> Roda-Viva </h1>
+				<p>____________________________________________________________<p>
+				<h2> Chico Buarque </h2>
+			</div>
+			
+		</header>
+		
+		<section id="corpo">
+			
+			<article class="musica">
+				<h2> Letra: </h2>
+				<p class="letra">
+					Tem dias que a gente se sente </br>
+					Como quem partiu ou morreu </br>
+					A gente estancou de repente </br>
+					Ou foi o mundo então que cresceu </br>
+					A gente quer ter voz ativa </br>
+					No nosso destino mandar </br>
+					Mas eis que chega a roda-viva </br>
+					E carrega o destino pra lá </br> </br>
+
+					<b>Roda mundo, roda-gigante </br>
+					Rodamoinho, roda pião </br>
+					O tempo rodou num instante </br>
+					Nas voltas do meu coração </b> </br> </br>
+
+					A gente vai contra a corrente </br>
+					Até não poder resistir </br>
+					Na volta do barco é que sente </br>
+					O quanto deixou de cumprir </br>
+					Faz tempo que a gente cultiva </br>
+					A mais linda roseira que há </br>
+					Mas eis que chega a roda-viva </br>
+					E carrega a roseira pra lá </br> </br>
+
+					<b>Roda mundo, roda-gigante </br>
+					Rodamoinho, roda pião </br>
+					O tempo rodou num instante </br>
+					Nas voltas do meu coração </b> </br> </br>
+
+					A roda da saia, a mulata </br>
+					Não quer mais rodar, não senhor </br>
+					Não posso fazer serenata </br>
+					A roda de samba acabou </br>
+					A gente toma a iniciativa </br>
+					Viola na rua, a cantar </br>
+					Mas eis que chega a roda-viva </br>
+					E carrega a viola pra lá </br> </br>
+
+					<b>Roda mundo, roda-gigante </br>
+					Rodamoinho, roda pião </br>
+					O tempo rodou num instante </br>
+					Nas voltas do meu coração </b> </br> </br>
+
+					O samba, a viola, a roseira </br>
+					Um dia a fogueira queimou </br>
+					Foi tudo ilusão passageira </br>
+					Que a brisa primeira levou </br>
+					No peito a saudade cativa </br>
+					Faz força pro tempo parar </br>
+					Mas eis que chega a roda-viva </br>
+					E carrega a saudade pra lá </br> </br>
+
+					<b>Roda mundo, roda-gigante </br>
+					Rodamoinho, roda pião </br>
+					O tempo rodou num instante </br>
+					Nas voltas do meu coração </b> </br> </br>
+				</p>
+			</article>
+			
+			<article class="direita">
+				
+				<h2> Vídeo <i class="material-icons">video_library</i> </h2>
+				
+				<iframe id="video" src="https://www.youtube.com/embed/4-2G5Zxq0t0" 
+				frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+				
+				<p class="desc"> 
+					
+					<font>"Roda Viva"</font> é uma canção do cantor e compositor brasileiro 
+					<font>Chico Buarque de Holanda</font>. Foi classificada em terceiro lugar 
+					no <font>III Festival de Música Popular Brasileira</font>, setembro e 
+					outubro do ano de 1967, ano em que foi lançada em seu álbum 
+					Chico Buarque de Hollanda - Volume 3. A revista Rolling Stone 
+					Brasil nomeou "Roda Vida" a vígesima sexta maior música 
+					brasileira de todos os tempos.
+				
+				</p>
+				<p class="desc"> 
+					
+					A música "Roda Viva" foi escrita inspirada na peça de teatro 
+					de mesmo nome, também de autoria de Chico Buarque. 
+					A peça não tinha a ver com política, mas com a 
+					trajetória de um cantor massificado pelo esquema 
+					da televisão. Em julho de 1968 a peça foi montada 
+					em São Paulo quando o CCC invadiu o teatro, 
+					depredou o cenário e espancou os atores. 
+					Chico Buarque suspeitou, na ocasião, que o 
+					CCC pretendia invadir a apresentação do espetáculo 
+					dirigido por Augusto Boal, Feira Paulista de 
+					Opinião que acontecia em outra sala do mesmo teatro.
+				
+				</p>
+				
+				<br/><br/><br/>
+				<h2> Escute no Spotify <i class="material-icons">library_music</i> </h2>
+				<iframe src="https://open.spotify.com/embed/track/06ND7qqsmIRCuWdQNQIlTE" 
+				id="spotify" frameborder="0" <!-- allowtransparency="true"  -->
+				allow="encrypted-media"></iframe>
+				
+				<hr color="#226644">
+				<h2> Referências Externas <i class="material-icons">queue_play_next</i> </h2>
+				
+				<p class="ref">
+					<i class="material-icons">forward</i>
+					<a target="blank" href="https://tvefamosos.uol.com.br/noticias/redacao/2016/11/23/tv-cultura-retira-musica-de-chico-buarque-na-abertura-do-roda-viva.htm">
+					«TV Cultura retira música de Chico Buarque da abertura do "Roda Viva"»</a>
+					- UOL: TV e Famosos <br/><br/>
+					<i class="material-icons">forward</i>
+					<a target="blank" href="http://www.tenhomaisdiscosqueamigos.com/2018/04/16/drenna-roda-viva/">
+					«A banda Drenna fez uma bela versão da atemporal “Roda Viva”, de Chico Buarque»</a>
+					- Tenho mais Discos que Amigos! <br/><br/>
+					<i class="material-icons">forward</i>
+					<a target="blank" href="http://www1.folha.uol.com.br/ilustrada/2018/01/1951133-chamado-de-subversivo-pela-censura-roda-viva-de-chico-faz-50-anos.shtml">
+					«Chamado de 'subversivo' pela Censura, 'Roda Viva', de Chico, faz 50 anos»</a>
+					- Folha de S. Paulo <br/><br/>
+				</p>
+				
+			</article>
+			
+		</section>
+		
+		<footer id="rodape">
+			
+			<p id="frase">
+				"O tempo rodou num instante nas voltas do meu coração!"
+			</p>
+			<p id="copyright">
+				&copy; Todos os Direitos Reservados - Vinícius Pereira Pinto - 2018
+			</p>
+			
+		</footer>
+		
+	</body>
+	
+</html>

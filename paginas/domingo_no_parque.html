@@ -1,0 +1,261 @@
+<!DOCTYPE HTML>
+
+<!-- AUTOR:	Vinícius Pereira Pinto -->
+
+<html>
+
+	<head>
+		
+		<title> Domingo no Parque </title>
+		
+		<meta charset="UTF-8">
+		<meta name="copyright" content="Vinil" />
+		
+		<!-- PARA INSERIR OS CÓDIGOS CSS -->
+		<link rel="stylesheet" type="text/css" href="../css/estilo.css"/>
+		<!-- PARA INSERIR O FAVICON -->
+		<link rel="shortcut icon" href="../imagens/favicon.ico" />
+		<!-- PARA INSERIR ICONES -->
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		
+	</head>
+	
+	<body>
+		
+		<header id="cabecalho" style="background-image: url('../imagens/gilberto.jpg');">
+			
+			<div id="logo">
+				&nbsp;&nbsp;T R O P I </br>
+				&nbsp;&nbsp;C Á L I A 
+			</div>
+			
+			<audio id="song">
+			  <source src="../musicas/domingo_no_parque.mp3" type="audio/mp3" />
+			  Your browser does not support the audio element.
+			</audio>
+			
+			<nav id="menu">
+				<h1> Menu Principal </h1>
+				<ol>
+					<a href="../index.html"> <li id="home"> <i class="material-icons">home</i> </li></a>
+					
+					<a href="roda_viva.html"> <li> <i class="material-icons">skip_previous</i> </li> </a>
+					<li> <button onclick="playAudio()"> <i class="material-icons">play_arrow</i> </button></li>
+					<li> <button onclick="pauseAudio()"> <i class="material-icons">pause</i> </button></li>
+					<a href="aquele_abraco.html"> <li> <i class="material-icons">skip_next</i> </li> </a>
+					
+					<div class="volume">
+						<li id="volume1"> <i class="material-icons">volume_up</i> </li>
+						<div class="volume-content">
+							<button id="mais_ou_menos" onclick="setAddVolume()"><i class="material-icons">add_circle_outline</i></button>
+							<button id="mais_ou_menos" onclick="setRemoveVolume()"><i class="material-icons">remove_circle_outline</i></button>
+						</div>
+					</div>
+					
+					<div class="dropdown">
+						<li id="queque"> <i class="material-icons">queue_music</i> </li>
+						<div class="dropdown-content">
+							<a href="tropicalia.html">Tropicália</a>
+							<a href="construcao.html">Construção</a>
+							<a href="alegria_alegria.html">Alegria, Alegria</a>
+							<a href="panis_et_circenses.html">Panis et Circenses</a>
+							<a href="sangue_latino.html">Sangue Latino</a>
+							<a href="aguas_de_marco.html">Águas de Março</a>
+							<a href="caminhando_e_cantando.html">Caminhando e Cantando</a>
+							<a href="mas_que_nada.html">Mas, que nada!</a>
+							<a href="chega_de_saudade.html">Chega de Saudade</a>
+							<a href="rosa_de_hiroshima.html">Rosa de Hiroshima</a>
+							<a href="metamorfose_ambulante.html">Metamorfose Ambulante</a>
+							<a href="pais_tropical.html">País Tropical</a>
+							<a href="as_rosas_nao_falam.html">As Rosas Não Falam</a>
+							<a href="roda_viva.html">Roda-Viva</a>
+							<a href="domingo_no_parque.html">Domingo no Parque</a>
+							<a href="aquele_abraco.html">Aquele Abraço</a>
+							<a href="carta_ao_tom_74.html">Carta ao Tom 74</a>
+							<a href="garota_de_ipanema.html">Garota de Ipanema</a>
+						</div>
+					</div>
+					
+					<div class="autores">
+						<li id="listAutores"> <i class="material-icons">recent_actors</i> </li>
+						<div class="autores-content">
+							<a href="autores/caetano.html">Caetano Veloso</a>
+							<a href="autores/cartola.html">Cartola</a>
+							<a href="autores/chico.html">Chico Buarque</a>
+							<a href="autores/elis.html">Elis Regina</a>
+							<a href="autores/geraldo.html">Geraldo Vandré</a>
+							<a href="autores/gilberto.html">Gilberto Gil</a>
+							<a href="autores/joao.html">João Gilberto</a>
+							<a href="autores/jorge.html">Jorge Ben Jor</a>
+							<a href="autores/mutantes.html">Os Mutantes</a>
+							<a href="autores/raul.html">Raul Seixas</a>
+							<a href="autores/secosemolhados.html">Secos & Molhados</a>
+							<a href="autores/tom.html">Tom Jobim</a>
+							<a href="autores/vinicius.html">Vinícius de Morais</a>
+						</div>
+					</div>
+					
+				</ol>
+				
+			</nav>
+			
+			<script>
+				var x = document.getElementById("song"); 
+				
+				x.volume = 0.8;
+				
+				function playAudio() { 
+					x.play(); 
+				} 
+
+				function pauseAudio() { 
+					x.pause(); 
+				} 
+				
+				function getVolume() { 
+					alert(x.volume);
+				} 
+
+				function setAddVolume() { 
+					x.volume += 0.1;
+				}
+
+				function setRemoveVolume() { 
+					x.volume -= 0.1;
+				}
+				
+			</script>
+		
+			<br/><br/><br/><br/><br/><br/>
+			<div id="titulo">
+				<h1> Domingo no Parque </h1>
+				<p>____________________________________________________________<p>
+				<h2> Gilberto Gil </h2>
+			</div>
+			
+		</header>
+		
+		<section id="corpo">
+			
+			<article class="musica">
+				<h2> Letra: </h2>
+				<p class="letra">
+					
+					<b>O rei da brincadeira (ê, José) <br/>
+					O rei da confusão (ê, João) <br/>
+					Um trabalhava na feira (ê, José) <br/>
+					Outro na construção (ê, João)</b> <br/><br/>
+					
+					A semana passada, no fim da semana <br/>
+					João resolveu não brigar <br/>
+					No domingo de tarde saiu apressado <br/>
+					E não foi pra Ribeira jogar capoeira <br/>
+					Não foi pra lá, pra Ribeira, foi namorar <br/>
+					O José como sempre no fim da semana <br/>
+					Guardou a barraca e sumiu <br/>
+					Foi fazer no domingo um passeio no parque <br/>
+					Lá perto da Boca do Rio <br/>
+					Foi no parque que ele avistou Juliana <br/>
+					Foi que ele viu <br/>
+					Foi que ele viu Juliana na roda com João <br/>
+					Uma rosa e um sorvete na mão <br/>
+					Juliana seu sonho, uma ilusão <br/>
+					Juliana e o amigo João <br/>
+					O espinho da rosa feriu Zé <br/>
+					E o sorvete gelou seu coração <br/><br/>
+					
+					<b>O sorvete e a rosa (ô, José) <br/>
+					A rosa e o sorvete (ô, José) <br/>
+					Foi dançando no peito (ô, José) <br/>
+					Do José brincalhão (ô, José)</b> <br/><br/>
+					
+					<b>O sorvete e a rosa (ô, José) <br/>
+					A rosa e o sorvete (ô, José) <br/>
+					Oi, girando na mente (ô, José) <br/>
+					Do José brincalhão (ô, José)</b> <br/><br/>
+					
+					Juliana girando (oi, girando) <br/>
+					Oi, na roda gigante (oi, girando) <br/>
+					Oi, na roda gigante (oi, girando) <br/>
+					O amigo João (João) <br/>
+					O sorvete é morango (é vermelho) <br/>
+					Oi girando e a rosa (é vermelha) <br/>
+					Oi, girando, girando (é vermelha) <br/>
+					Oi, girando, girando... <br/>
+					Olha a faca! (olha a faca!) <br/><br/>
+					
+					Olha o sangue na mão (ê, José) <br/>
+					Juliana no chão (ê, José) <br/>
+					Outro corpo caído (ê, José) <br/>
+					Seu amigo João (ê, José) <br/>
+					<b>Amanhã não tem feira (ê, José) <br/>
+					Não tem mais construção (ê, João) <br/>
+					Não tem mais brincadeira (ê, José)<br/>
+					Não tem mais confusão (ê, João)</b>
+
+				</p>
+			</article>
+			
+			<article class="direita">
+				
+				<h2> Vídeo <i class="material-icons">video_library</i> </h2>
+				
+				<iframe id="video" src="https://www.youtube.com/embed/Zbv3M-AdxC0" 
+				frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+				
+				<p class="desc"> 
+					
+					<font>Domingo no Parque</font> é uma canção de <font>Gilberto Gil</font>, lançada em 1967. Trata-se de uma música narrativa, que conta a história de dois rapazes amigos: um deles é José, o rei da brincadeira, e o outro João, o rei da confusão. No fim de semana, ambos foram fazer o que sabiam: divertir-se e brigar, respectivamente. Mas João não foi brigar, e José quando viu uma moça - Juliana - no parque de diversões se apaixona, mas é tomado de raiva quando vê Juliana com João, sendo tomado pelo ciúme e cometendo um duplo homicídio passional, levando ao anticlímax final.
+				
+				</p><p class="desc">
+					
+					A música é riquíssima em figuras de linguagem, como as metonímias, anáforas e quiasmos. Nos arranjos, a composição causou violenta polêmica por unir elementos considerados contraditórios da cultura contemporânea, como o som do berimbau, o andamento melódico da letra, que lembra um baião, de um lado, e, de outro, a presença de orquestra de música erudita e o acompanhamento de um conjunto de rock, no caso os Mutantes, o que revoltou muitos fãs tradicionalistas de música brasileira, por causa do uso de guitarra elétrica, considerado então um símbolo do "colonialismo cultural".
+
+				</p><p class="desc">
+					
+					Gilberto Gil ganhou o <font>segundo lugar com essa canção no III Festival de Música Popular da TV Record de 1967</font>, acompanhado do grupo Os Mutantes, com moderno arranjo de Rogério Duprat, também premiado em primeiro lugar nesse quesito.
+
+				</p><p class="desc">
+					
+					A música foi lançada no álbum "Gilberto Gil" (1968) e teve o mérito de, ao lado de "Alegria, Alegria", de Caetano Veloso, se tornar um <font>divisor na música brasileira</font>. Gilberto Gil buscava um som mais universal para a música que se fazia naquela época e usou elementos baianos, como o som do berimbau e a roda de capoeira. A história de José e João tem narrativa cinematográfica e o arranjo orquestral de Rogério Duprat pontua o confronto e descreve perfeitamente esse clima de delírio.
+				
+				</p>
+				
+				<br/><br/><br/>
+				<h2> Escute no Spotify <i class="material-icons">library_music</i> </h2>
+				<iframe src="https://open.spotify.com/embed/track/3sUMmrC1JkKTJO4ZnWZro4" 
+				id="spotify" frameborder="0" <!-- allowtransparency="true"  -->
+				allow="encrypted-media"></iframe>
+				
+				<hr color="#226644">
+				<h2> Referências Externas <i class="material-icons">queue_play_next</i> </h2>
+				
+				<p class="ref">
+					<i class="material-icons">forward</i>
+					<a target="blank" href="http://www.gilbertogil.com.br/sec_texto.php?noticia&id=1750">
+					«Um domingo tropicalista no parque, na visão de Gilberto Gil»</a>
+					- Paulo Peres <br/><br/>
+					<i class="material-icons">forward</i>
+					<a target="blank" href="http://miltonribeiro.sul21.com.br/tag/domingo-no-parque/">
+					«No tempo em que o popular era muito, mas muito bom»</a>
+					- Milton Ribeiro <br/><br/>
+				</p>
+				
+			</article>
+			
+		</section>
+		
+		<footer id="rodape">
+			
+			<p id="frase">
+				"Não tem mais construção (ê, João)!"
+			</p>
+			<p id="copyright">
+				&copy; Todos os Direitos Reservados - Vinícius Pereira Pinto - 2018
+			</p>
+			
+		</footer>
+		
+	</body>
+	
+</html>
