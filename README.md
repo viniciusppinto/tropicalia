@@ -1,1 +1,1 @@
-# http://viniciusppinto@github.io
+# http://viniciusppinto.github.io
